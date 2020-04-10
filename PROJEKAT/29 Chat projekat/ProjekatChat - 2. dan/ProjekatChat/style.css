@@ -1,0 +1,107 @@
+body{
+    text-align: center;
+    color: purple;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rebeccapurple;
+    cursor: pointer;
+}
+
+form{
+    margin: 15px;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 3px purple solid;
+}
+
+input:focus, .btn:focus{
+    outline-width: 0;
+}
+
+.username{
+    font-weight: bold;
+}
+
+.date{
+    color: grey;
+}
+
+#ulMessages{
+    list-style-type: none;
+    font-size: 20px;
+
+    /* Poyicioniranje centralno ispod top sekcije */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    bottom: 20%;
+    overflow: hidden;
+
+    /* ul centralno postavljena, ali tekst levo poravnat */
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+
+    /* dodamo skrolovanje poruka */
+    overflow-y: auto;
+
+    /* prelom bilo koje reči bez razmaka */
+    word-wrap: break-word;
+
+}
+
+#ulMessages>li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: silver 1px solid;
+}
+
+
+
+
+#top{
+    position: absolute;
+    height: 25%;
+
+    /* Postaviti centralno */
+    left: 0;
+    right: 0;
+    top: 0;
+
+    overflow: hidden;
+}
+
+#bottom{
+    position: absolute;
+    height: 20%;
+
+    /* Postaviti centralno */
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden;
+}

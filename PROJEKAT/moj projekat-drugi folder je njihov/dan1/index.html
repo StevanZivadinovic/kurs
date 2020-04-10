@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItBootcamp chat</title>
+    <link rel="stylesheet   " href="stile.css">
+</head>
+<body>
+    
+    <!--naslov ceta-->
+    <header>
+        <h1>ITBootcamp chat</h1>
+        <h2>Choose a chatroom</h2>
+    
+    </header>
+
+    <!--Dugmad za sobe(chatrooms)-->
+
+    <nav>
+        <button id="btnGeneral" class="btn">#general</button>
+        <button id="btnJS" class="btn">#js</button>
+        <button id="btnHomeworks" class="btn">#homeworks</button>
+        <button id="btnTest" class="btn">#test</button>
+    </nav>
+
+    <!--Prostor za poruke-->
+    <section>
+        <ul>
+            <!--Ovde ce se nalaziti poruke-->
+        </ul>
+    </section>
+
+    <!--Forma za unos poruke-->
+
+    <form id="message">
+        <input type="text" placeholder="Your message..." id="inputMessage">
+        <input type="submit" value="Send" id="btnSend" class="btn">
+
+
+    </form>
+    <!--Forma za promenu korsnickog imena-->
+    <form id="username">
+        <input type="text" placeholder="Update username" id="inputUsername">
+        <input type="submit" value="Update" id="btnUpdate" class="btn">
+    </form>
+
+<!--Za ovaj kod kad si u firestore bazi ides u Project Overview pa , pa na dugme 1 app, pa 
+na tockic kliknes-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCucY2XFNgc7a5iv9lwLVWduaoflVGdl30",
+    authDomain: "itbootcamp-4cede.firebaseapp.com",
+    databaseURL: "https://itbootcamp-4cede.firebaseio.com",
+    projectId: "itbootcamp-4cede",
+    storageBucket: "itbootcamp-4cede.appspot.com",
+    messagingSenderId: "901193034180",
+    appId: "1:901193034180:web:6dd97925642c8005eb5c91"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  let db=firebase.firestore();
+</script>
+<!--Povezivanje sa eksternim fajlovima-->
+<script src="chat.js"></script>
+</body>
+</html>

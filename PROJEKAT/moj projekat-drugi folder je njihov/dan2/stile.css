@@ -1,0 +1,140 @@
+body{
+    text-align: center;
+    color:black;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    background-image: url('./a.jpg');
+
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color:black;
+    color: green;
+    border:0;
+    border-radius: 5px;
+
+}
+.btn:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+input{
+    width: 400px;
+    height:30px;
+    font-size: 18px;
+    border-radius: 5px;
+
+
+}
+
+form{
+    margin: 15px;
+
+
+}
+input:focus{
+    border:3px yellow solid;
+    color: green;
+
+}
+input:focus, .btn{
+    outline-width: 0;/*da se ne vidi neki dodatni plavi okvir koji se javlja oko inputa i dugmica*/
+}
+
+.username{
+    font-weight: bold;
+}
+.date{
+    color: grey;
+}
+
+
+#messages{
+    list-style-type: none;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px;
+   
+
+/*Pozicioniranje ispod top sekcije*/
+position: absolute;
+left: 0;
+right: 0;
+top: 25%;
+bottom: 20%;
+overflow: hidden;
+
+/*ul centralno postavljena ali tekst levo poravnat*/
+text-align: left;
+width: 700px;
+margin:0 auto;
+
+
+overflow-y: auto;/*dodavanje skrola*/
+/*prelom bilo koje reci*/
+word-wrap: break-word;
+
+}
+
+#messages>li{/*Pristup svim direktnim potomcima*/
+    width: 60%;
+    background-color: lightslategray;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 20px;
+    border-radius: 0px 20px 20px 20px;
+    
+}
+
+.me{
+    margin-left: auto;
+    background-color: brown !important;/*ovo important znaci da je to still 
+    koji mora da se prevashodno ispostuje; id-jevi imaju priooritet  a ovde je klasa u pitanju
+    pa mora da stavis important*/
+    border-radius: 20px 0px 20px 20px !important;
+    
+    
+}
+#top{
+    position: absolute;
+    height: 25%;
+
+    /* Postaviti centralno */
+    left: 0;
+    right: 0;
+    top: 0;
+
+    overflow: hidden;
+
+}
+#bottom{
+    position: absolute;
+    height: 20%;
+
+    /* Postaviti centralno */
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden;
+
+}
+#divUpdatedUsername{
+    font-size: 20px;
+    
+
+}
+#spanNewUsername{
+    font-weight: bold;
+    
+}
+
+.btn-selected{
+    background-color:yellow;
+    color: green;
+    
+    
+}

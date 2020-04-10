@@ -1,0 +1,49 @@
+body{
+
+    font-size: 24px;
+}
+
+
+
+h1{
+
+    color: rgb(0, 38, 255);
+}
+
+ul {
+
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+ul li{
+
+    border: 1px blue dotted;
+    padding: 10px;
+    margin: 5px;
+    width: 290px;
+    background-color: lightblue;
+
+}
+
+ul li:hover {
+
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+#unos {
+
+    padding: 10px;
+    margin: 5px;
+    width: 290px;
+    
+}
+
+#submit{
+
+    padding: 10px 30px;
+    width: 310px;
+    margin: 5px;
+}
