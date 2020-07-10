@@ -237,8 +237,6 @@ console.log(s,br);
 
 //Odrediti proizvod brojeva od n do m koji su deljivi brojem a
 
-
-
 n=-11;
 m=30;
 a=10;

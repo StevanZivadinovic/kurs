@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 18px;
+}
+
+header {
+	background-image: url('../images/lego_pizza.jpg');
+	background-position: 0 -160px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	height: 120px;
+	color: white;
+	z-index: 100;
+	position: relative;
+}
+
+.center {
+	position: absolute;
+	left: 0;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+	text-shadow: 0px 0px 6px rgba(0,0,0,1);
+	z-index: 1;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;  
+	width: 100%;
+	z-index: 999;
+}
+
+nav ul {
+	list-style-type: none;
+	background-color: #303030;
+}
+
+nav ul::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+nav li {
+	float: left;
+	width: 25%;
+}
+
+nav li a, nav .dropbtn {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 2px solid #bababa;
+}
+
+nav li a:hover, nav .dropdown:hover .dropbtn {	
+	background-color: red;	
+	font-weight: bold;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	width: 25%;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;  
+    width: 100%;
+	z-index: 999;
+}
+
+.dropdown-2 {
+	bottom: 47px;
+	right: 0;
+	width: 25%;
+}
+
+.rest_page {
+	position: absolute;
+	top: 46px;
+	width: 100%;
+}
+
+.left-panel-float {
+	float: left;
+	clear: left;
+	width: 20%;
+	padding: 15px;
+}
+
+.right-panel-float {
+	float: right;
+	clear: right;
+	width: 75%;
+	padding: 15px 15px 60px 15px;
+}
+
+aside ul {
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+aside li a {
+	display: block;
+	padding: 8px;
+	margin-bottom: 8px;
+	background-color: #33b5e5;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+aside li a:hover {
+	background-color: #0099cc;
+}
+
+.img-container {
+	float: left;
+	width: 30%;
+	padding: 5px;
+	text-align: center;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.img-container h3 {
+	font-size: 24px;
+}
+
+.img-container img {
+	margin: 8px;
+}

@@ -427,7 +427,7 @@ switch(ocena)
 dvojka, četvorka, šestica, osmica ili je unos pogrešan.*/
 
 
-broj=8;
+broj=9;
 switch(broj)
 
 {
@@ -456,6 +456,8 @@ switch(broj)
 	console.log("uneta cifra je 8");
 	break;
 
+	default:
+        console.log(`unos je pogresan`);
 
 }
 
